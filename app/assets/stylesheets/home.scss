@@ -1,0 +1,88 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.hero-image {
+  background-image: url('/assets/pineapple.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  &:hover {
+  background: url('/assets/pineapple.svg');
+  background-position: center;  
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+}
+
+.hero-image__copy {
+  color: #333;
+  position: absolute;
+  right: 10%;
+  text-align: right;
+  top: 35%;
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+  h3 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-top: 15px;
+  }
+  button {
+    background-color: #fca311;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 9px 8px -6px #5e5656;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.5rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-top: 15px;
+    padding: 10px 45px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+.about-section {
+  background-color: #e6f6f7;
+  padding-top: 40px;
+  text-align: center;
+  h1 {
+    color: #29339b;
+    font-size: 3rem;
+    margin: 0px;
+    padding-bottom: 20px;
+    text-transform: uppercase;
+  }
+  h3 {
+    color: #333;
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 40px;
+    margin: auto;
+    max-width: 65%;
+    margin-bottom: 50px;
+  }
+}
+
+.about-section__icons {
+  display: flex;
+  max-width: 80%;
+  margin: auto;
+  padding: 20px;
+}
+
+.about-section--block {
+  padding: 1rem 2rem;
+  width: calc(100%/ 3);
+  img {
+    max-height: 17%;
+    max-width: 17%;
+  }
+}

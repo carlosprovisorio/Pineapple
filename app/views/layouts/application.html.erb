@@ -9,6 +9,32 @@
   </head>
 
   <body>
-    <%= yield %>
+		<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+			<div class='container'>
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<%= link_to root_path do %>
+						<%= image_tag "logo.svg", class: "logo" %>
+					<% end %>
+				</div>
+				<div class="collapse navbar-collapse" id="main-nav-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><%= link_to "Home", "#" %></li>
+						<li><%= link_to "Resume", "#" %></li>
+						<li><%= link_to "Portfolio", "#" %></li>
+						<li><%= link_to "Contact", "#" %></li>
+						<li><%= link_to "Resources", "#" %></li>
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			</div>
+    </nav>
+    <div>
+      <%= yield %>
+    </div>
   </body>
 </html>
