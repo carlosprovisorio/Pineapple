@@ -4,21 +4,21 @@
 
 
 .hero-image {
-  background-image: url('/assets/pineapple.svg');
+  background-image: url('/assets/pineapple_cover.svg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
   width: 100%;
-  &:hover {
-  background: url('/assets/pineapple.svg');
-  background-position: center;  
-  background-repeat: no-repeat;
-  background-size: cover;
-  }
+  //&:hover {
+  //background: url('/assets/pineapple.svg');
+  //background-position: center;  
+  //background-repeat: no-repeat;
+  //background-size: cover;
+  //}
 }
 
 .hero-image__copy {
-  color: #333;
+  color: #fff;
   position: absolute;
   right: 10%;
   text-align: right;
