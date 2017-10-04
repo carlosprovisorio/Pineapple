@@ -1,5 +1,12 @@
+<div class="container">
+  <% flash.each do |key, value| %>
+    <%= content_tag :div, value, class: "alert alert-#{key}" %>
+  <% end %>
+</div>
+
 <div class="contact-section">
 	<h3>Contact</h3>
+  <p>Thanks a lot for visiting. Please contact me if you have any queries.</p>
 </div>
 
 <div class="row">
@@ -17,7 +24,7 @@
 				<%= f.label :comments %>
 				<%= f.text_area :comments, class: 'form-control' %>
 			</div>
-			<%= f.submit 'Submit' %>
+			<%= f.submit 'Submit', class: 'contact-section__button' %>
 		<% end %>
 	</div>
 </div>
