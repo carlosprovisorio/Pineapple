@@ -3,7 +3,13 @@
 }
 
 .contact-section {
-  padding-top: 150px;
+	width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 85vh;
+  padding-top: 50px;
   text-align: center;
   h3 { 
     color: #29339b;

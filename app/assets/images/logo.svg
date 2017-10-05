@@ -106,7 +106,7 @@
 <use xlink:href="#path30_fill" fill="white" transform="translate(-97 -1091)"/>
 </mask>
 <g mask="url(#mask0_outline_ins)">
-<use xlink:href="#path31_stroke_2x" transform="translate(-97 -1091)" fill="#FFFFFF"/>
+<use xlink:href="#path31_stroke_2x" transform="translate(-97 -1091)" fill="#333333"/>
 </g>
 </g>
 </g>

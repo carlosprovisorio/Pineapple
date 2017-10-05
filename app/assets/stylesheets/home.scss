@@ -4,27 +4,25 @@
 
 
 .hero-image {
-  background-image: url('/assets/pineapple_cover.svg');
+  background-image: url('/assets/levi_bare.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  height: 500px;
-  width: 100%;
-  //&:hover {
-  //background: url('/assets/pineapple.svg');
-  //background-position: center;  
-  //background-repeat: no-repeat;
-  //background-size: cover;
-  //}
+	width: 100%;
+	padding: 0 7%;
+	display: table;
+	margin: 0;
+	max-width: none;
+	//background-color: #373B44;
+	height: 100vh;
 }
 
 .hero-image__copy {
   color: #fff;
-  position: absolute;
-  right: 10%;
   text-align: right;
-  top: 35%;
+	display: table-cell;
+  vertical-align: middle;
   h1 {
-    font-size: 3rem;
+    font-size: 2em;
     text-transform: uppercase;
   }
   h3 {
@@ -50,13 +48,18 @@
 }
 
 .about-section {
-  background-color: #e6f6f7;
+  background-color: #f9efe6;
+	width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 90vh;
   padding-top: 40px;
   text-align: center;
   h1 {
-    color: #29339b;
+    color: #333;
     font-size: 3rem;
-    margin: 0px;
     padding-bottom: 20px;
     text-transform: uppercase;
   }
@@ -73,9 +76,7 @@
 
 .about-section__icons {
   display: flex;
-  max-width: 80%;
-  margin: auto;
-  padding: 20px;
+  padding: 5%;
 }
 
 .about-section--block {
@@ -88,30 +89,41 @@
 }
 
 .expertise-section {
-  background-color: #F9F9F9;
+  background-color: #E0665D;
+	width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 70vh;
   padding-top: 40px;
   text-align: center;
   h1 {
-    color: #29339b;
+    color: #fff;
     font-size: 3rem;
     margin: 0px;
-    padding-bottom: 20px;
+    padding-bottom: 5%;
     text-transform: uppercase;
   }
 }
 
 .expertise-section__icons {
   display: flex;
-  justify-content: space-around;
-  max-width: 50%;
-  margin: auto;
-  padding: 30px;
+  justify-content: center;
   img {
-    height: 60px;
+    height: 110px;
+    margin: 10px;
   }
 }
 
 .portfolio-section {
+  background-color: #fff;
+	width: 100%;
+  padding: 0 7%;
+  display: table;
+  margin: 0;
+  max-width: none;
+  height: 70vh;
   padding-top: 40px;
   text-align: center;
   h1 {
