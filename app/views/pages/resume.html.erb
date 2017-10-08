@@ -2,8 +2,8 @@
   <h1>Resume</h1>
   
   <div class="">
-    <%= image_tag("resume.jpg", :alt => "Resume - Carlos Ferreira") %>
+    <%= image_tag("resume.svg", :alt => "Resume - Carlos Ferreira") %>
   </div>
-
-  <%= link_to 'Download Resume', root_url+'resume.jpg', { target: '_blank' } %>
+  
+  <%= link_to "Download Resume", "/resume.pdf", class: "btn btn-danger", :target => "blank" %>
 </div>
