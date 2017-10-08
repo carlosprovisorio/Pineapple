@@ -1,28 +1,9 @@
-<section>
-  <h1 class="resume-title">Resume</h1>
-  <div class= "resume-header">
-    <div>
-      <h1>Carlos Ferreira</h1>
-      <h4>Web Developer</h4>
-    </div>
-    <div class="resume-header__links">
-      <i class= "fa fa-phone" aria-hidden="true"><p>(647)879-8494</p></i>
-      <%= link_to new_contact_path, class: '' do %>
-        <i class= "fa fa-envelope" aria-hidden="true"></i>
-        carlosprovisorio@icloud.com
-      <% end %>
-      <%= link_to root_path, class: '' do %>
-        <i class= "fa fa-globe" aria-hidden="true"></i>
-        https://salty-everglades-34649.herokuapp.com
-      <% end %>
-      <%= link_to 'https://www.linkedin.com/in/carlosalbertoferreira/', target: '_blank', class: '' do %>
-        <i class= "fa fa-linkedin" aria-hidden="true"></i>
-        www.linkedin.com/in/carlosalbertoferreira
-      <% end %>
-      <%= link_to 'https://www.github.com/carlosprovisorio', target: '_blank', class: '' do %>
-        <i class= "fa fa-github" aria-hidden="true"></i>
-        www.github.com/carlosprovisorio
-      <% end %>
-    </div>
+<div class="resume-section text-center">
+  <h1>Resume</h1>
+  
+  <div class="">
+    <%= image_tag("resume.jpg", :alt => "Resume - Carlos Ferreira") %>
   </div>
-</section>
+
+  <%= link_to 'Download Resume', root_url+'resume.jpg', { target: '_blank' } %>
+</div>
