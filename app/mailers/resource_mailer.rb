@@ -3,6 +3,6 @@ class ResourceMailer < ActionMailer::Base
   def resource_email(name, description)
     @name = name
     @description = description
-    mail(subject: 'Carlos Website - Add Resource')
+    mail(from: "carlosprovisorio@icloud.com", subject: 'Carlos Website - Add Resource')
   end
 end
