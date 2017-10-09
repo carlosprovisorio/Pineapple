@@ -15,7 +15,7 @@ class ResourcesController < ApplicationController
        redirect_to new_resource_path
        name = params[:resource][:name]
        description = params[:resource][:description]
-       ContactMailer.resource_email(name, description).deliver
+       ResourceMailer.resource_email(name, description).deliver
        flash[:success] = "Message sent."
      else
        flash[:danger] = 'Error occured, resource has not been added.'
