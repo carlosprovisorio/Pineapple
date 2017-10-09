@@ -16,7 +16,8 @@ class ResourcesController < ApplicationController
        name = params[:resource][:name]
        description = params[:resource][:description]
        ResourceMailer.resource_email(name, description).deliver
-       flash[:success] = "Message sent."
+       flash[:success] = "Message sent, your Resource is pending approval."
+       redirect_to resources_path
      else
        flash[:danger] = 'Error occured, resource has not been added.'
        redirect_to new_resource_path
