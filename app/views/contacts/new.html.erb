@@ -1,16 +1,9 @@
-<div class="container">
-  <% flash.each do |key, value| %>
-    <%= content_tag :div, value, class: "alert alert-#{key}" %>
-  <% end %>
-</div>
-
-<div class="contact-section">
-  <div class="contact-section__header">
-    <h3>Contact</h3>
-    <p>Thanks a lot for visiting. Please contact me if you have any queries.</p>
-  </div>
-
-  <div class="row">
+<div class="row">
+  <div class="contact-section">
+    <div class="contact-section__header">
+      <h3>Contact</h3>
+      <p>Thanks a lot for visiting. Please contact me if you have any queries.</p>
+    </div>
     <div class="col-md-4 col-md-offset-4">
       <%= form_for @contact do |f| %>
         <div class="form-group">
