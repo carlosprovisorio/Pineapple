@@ -29,12 +29,19 @@
 						<li><%= link_to "Resume", resume_path %></li>
 						<li><%= link_to "Portfolio", "#" %></li>
 						<li><%= link_to "Contact", new_contact_path %></li>
-						<li><%= link_to "Resources", "#" %></li>
+						<li><%= link_to "Resources", resources_path %></li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>
     </nav>
-    <%= yield %>
+    <div class="container">
+      <% flash.each do |key, value| %>
+        <%= content_tag :div, value, class: "alert alert-#{key}" %>
+      <% end %>
+      
+      <%= yield %>
+    </div>
+
     <footer>
         Made by <a href="#">@CARLOS FERREIRA</a>
     </footer>
