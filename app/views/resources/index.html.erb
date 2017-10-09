@@ -1,3 +1,20 @@
-<h1>Resources</h1>
+<div class="text-center">
+  <h1>Resources</h1>
+  
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
 
-<%= link_to "Add New Resource", new_resource_path, class: "btn btn-danger" %>
+    <% @resources.each do |resource| %>
+      <tr>
+        <td><%= resource.name %></td>
+        <td><%= resource.description %></td>
+      </tr>
+    <% end %>
+  </table>
+
+  <%= link_to "Add New Resource", new_resource_path, class: "btn btn-danger" %>
+</div>
+

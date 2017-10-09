@@ -6,4 +6,10 @@ class ContactMailer < ActionMailer::Base
     @body = body
     mail(from: email, subject: 'Carlos Website - Form Message')
   end
+
+  def resource_email(name, description)
+    @name = name
+    @description = description
+    mail(subject: 'Carlos Website - Add Resource')
+  end
 end
