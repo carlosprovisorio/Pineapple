@@ -11,8 +11,6 @@ class ResourcesController < ApplicationController
   def create
     @resource = Resource.new(resource_params)
      if @resource.save
-       flash[:success] = 'Resource Added successfuly.'
-       redirect_to new_resource_path
        name = params[:resource][:name]
        description = params[:resource][:description]
        ResourceMailer.resource_email(name, description).deliver
