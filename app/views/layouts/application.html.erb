@@ -6,6 +6,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'https://s3.ca-central-1.amazonaws.com/pineappleapplication/favicon32.png' %>
   </head>
 
   <body>
@@ -19,7 +20,7 @@
 						<span class="icon-bar"></span>
 					</button>
 					<%= link_to root_path do %>
-						<%= image_tag "logo.svg", class: "logo" %>
+						<%= image_tag "https://s3.ca-central-1.amazonaws.com/pineappleapplication/logo.svg", class: "logo" %>
 					<% end %>
 				</div>
 				<div class="collapse navbar-collapse" id="main-nav-collapse">
