@@ -1,7 +1,7 @@
 class ResourcesController < ApplicationController
 
   def index
-    @resources = Resource.where("is_approved = ?", true)
+    @resource = Resource.where("is_approved = ?", true)
   end
 
   def new
