@@ -3,25 +3,25 @@
     <div class="resources-section__header text-center">
       <h1>Resources</h1>
       
-    <%= image_tag("https://s3.ca-central-1.amazonaws.com/pineappleapplication/in_progress.png", alt: "Out of Service") %>
-      <!--
-      <table>
-        <tr>
-          <th>Name</th>
-          <th>Description</th>
-        </tr>
+      <% @resources.each do |resource| %>
+        <div class="row">
 
-        <% @resource.each do |resource| %>
-          <tr>
-            <td><%= resource.name %></td>
-            <td><%= resource.description %></td>
-          </tr>
-        <% end %>
-      </table>
-      -->
+          <div class="col-md-4">
+            <%= image_tag(resource.picture, size: "60x60", class: "gravatar") if resource.picture? %>
+          </div>
 
+          <div class="col-md-2">
+            <section class="center">
+              <h5>Name: <%= resource.name %></h5>
+            </section>
+          </div>
+
+          <div class="col-lg-6">
+            <h4><%= resource.description %></h4>
+          </div>
+        </div>
+      <% end %>
     </div>
       <%= link_to "Add New Resource", new_resource_path, class: "resources-section__button" %>
   </div>
 </div>
-

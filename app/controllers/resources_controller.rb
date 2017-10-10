@@ -1,7 +1,7 @@
 class ResourcesController < ApplicationController
 
   def index
-    @resource = Resource.where("is_approved = ?", true)
+    @resources = Resource.where("is_approved = ?", true)
   end
 
   def new
@@ -24,7 +24,7 @@ class ResourcesController < ApplicationController
 
   private
     def resource_params
-      params.require(:resource).permit(:name, :description)
+      params.require(:resource).permit(:name, :description, :picture)
     end
 end
 
