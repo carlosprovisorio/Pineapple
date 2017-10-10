@@ -1,8 +1,4 @@
-.alert {
-  margin: 20px;
-}
-
-.contact-section {
+.resources-section {
 	width: 100%;
   padding: 0 7%;
   display: table;
@@ -16,26 +12,22 @@
     padding-bottom: 20px;
     text-transform: uppercase;
   }
-  p {
-    font-size: 1.5rem;
-  }
 }
 
-.contact-section__header {
-  text-align: center;
+.resources-section__header {
   margin-bottom: 30px;
 }
 
-.contact-section__button {
+.resources-section__button {
   background-color: #fca311;
   border: none;
   border-radius: 4px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  box-shadow: 0 9px 8px -6px #5e5656;
   color: #ffffff;
   display: inline-block;
   font-size: 1.5rem;
   font-weight: normal;
-  float: right;
+  //float: right;
   letter-spacing: 1px;
   margin-top: 15px;
   padding: 10px 45px;

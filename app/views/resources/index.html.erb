@@ -1,20 +1,27 @@
-<div class="text-center">
-  <h1>Resources</h1>
-  
-  <table>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-    </tr>
+<div class="row">
+  <div class="resources-section text-center">
+    <div class="resources-section__header text-center">
+      <h1>Resources</h1>
+      
+    <%= image_tag("https://s3.ca-central-1.amazonaws.com/pineappleapplication/in_progress.png", alt: "Out of Service") %>
+      <!--
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
 
-    <% @resource.each do |resource| %>
-      <tr>
-        <td><%= resource.name %></td>
-        <td><%= resource.description %></td>
-      </tr>
-    <% end %>
-  </table>
+        <% @resource.each do |resource| %>
+          <tr>
+            <td><%= resource.name %></td>
+            <td><%= resource.description %></td>
+          </tr>
+        <% end %>
+      </table>
+      -->
 
-  <%= link_to "Add New Resource", new_resource_path, class: "btn btn-danger" %>
+    </div>
+      <%= link_to "Add New Resource", new_resource_path, class: "resources-section__button" %>
+  </div>
 </div>
 
