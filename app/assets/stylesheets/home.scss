@@ -121,7 +121,6 @@
   background-color: #fff;
 	width: 100%;
   padding: 0 7%;
-  display: table;
   margin: 0;
   max-width: none;
   height: 70vh;
@@ -131,6 +130,15 @@
     margin: 0px;
     padding-bottom: 20px;
     text-transform: uppercase;
+  }
+}
+
+.portfolio-section__thumbnail {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px;
+  img {
+    margin: 15px;
   }
 }
 
