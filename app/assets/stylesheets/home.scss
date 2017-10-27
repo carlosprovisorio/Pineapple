@@ -4,11 +4,13 @@
 
 
 .hero-image {
+  @media screen and (max-width: 1200px) {
+	height: 50vh;
+  }
   background-image: url('https://s3.ca-central-1.amazonaws.com/pineappleapplication/levi_bare.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 	width: 100%;
-	padding: 0 7%;
 	display: table;
 	margin: 0;
 	max-width: none;
@@ -21,6 +23,7 @@
   text-align: right;
 	display: table-cell;
   vertical-align: middle;
+  padding: 0 7%;
   h1 {
     font-size: 3em;
     text-transform: uppercase;
@@ -51,13 +54,15 @@
 }
 
 .about-section {
+  @media screen and (max-width: 600px) {
+    height: 60vh;
+  }
   background-color: #f9efe6;
 	width: 100%;
-  padding: 0 7%;
   display: table;
   margin: 0;
   max-width: none;
-  height: 90vh;
+  height: 80vh;
   padding-top: 40px;
   h1 {
     color: #333;
@@ -93,11 +98,9 @@
 .expertise-section {
   background-color: #E0665D;
 	width: 100%;
-  padding: 0 7%;
-  display: table;
   margin: 0;
   max-width: none;
-  height: 70vh;
+  height: 80vh;
   padding-top: 40px;
   h1 {
     color: #fff;
@@ -109,6 +112,10 @@
 }
 
 .expertise-section__icons {
+  @media screen and (max-width: 600px) {
+   display:  inline-block;
+  }
+
   display: flex;
   justify-content: center;
   img {
@@ -120,10 +127,8 @@
 .portfolio-section {
   background-color: #fff;
 	width: 100%;
-  padding: 0 7%;
   margin: 0;
   max-width: none;
-  height: 70vh;
   padding-top: 40px;
   h1 {
     font-size: 3rem;
@@ -139,6 +144,7 @@
   margin: 30px;
   img {
     margin: 15px;
+    max-width: 90%;
   }
 }
 
