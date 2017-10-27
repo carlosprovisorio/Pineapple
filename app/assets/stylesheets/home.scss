@@ -5,7 +5,7 @@
 
 .hero-image {
   @media screen and (max-width: 1200px) {
-	height: 50vh;
+	height: 70vh;
   }
   background-image: url('https://s3.ca-central-1.amazonaws.com/pineappleapplication/levi_bare.jpg');
   background-repeat: no-repeat;
@@ -54,15 +54,11 @@
 }
 
 .about-section {
-  @media screen and (max-width: 600px) {
-    height: 60vh;
-  }
   background-color: #f9efe6;
 	width: 100%;
   display: table;
   margin: 0;
   max-width: none;
-  height: 80vh;
   padding-top: 40px;
   h1 {
     color: #333;
@@ -96,12 +92,14 @@
 }
 
 .expertise-section {
+  @media screen and (max-width: 600px) {
+    height: 80vh;
+  }
   background-color: #E0665D;
 	width: 100%;
   margin: 0;
   max-width: none;
-  height: 80vh;
-  padding-top: 40px;
+  padding: 40px;
   h1 {
     color: #fff;
     font-size: 3rem;
